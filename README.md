@@ -20,8 +20,6 @@ C++分布式网络通信框架
 
 ## DRPC-LTM分布式网络通信框架（流程简介）
 <img width="826" alt="DRPC-LTM" src="https://github.com/ZealACMer/DRPC-LTM/assets/16794553/a7370b99-00dc-4808-a380-f88a86a62165">
-
-
 上图中绿色方框内的内容，即为本分布式网络通信框架实现的核心功能。
                         
 ## 环境配置
@@ -52,7 +50,6 @@ Protobuf是Google开发的一种用于跨平台信息交互的数据格式，支
 
 example中的子文件夹provider提供了远程服务发布方的编程示例，另一个子文件夹consumer提供了远程服务调用方的编程示例。通过autobuild.sh脚本构建项目完成后，在bin目录里面，会有可执行文件provider和consumer，如下图所示：
 ![DRPC-LTM_2](https://github.com/ZealACMer/DRPC-LTM/assets/16794553/137707e7-819a-45f9-898f-515336dc69f2)
-
 在服务器上启动zookeeper之后，在bin目录下，执行命令./provider -i test.conf先行启动服务提供方的服务，随后执行命令./consumer -i test.conf，如果服务申请端返回"rpc GetFriendList response success!"，则说明运行成功。
 
 ## 如果在自己的项目中使用DRPC-LTM分布式网络通信框架
