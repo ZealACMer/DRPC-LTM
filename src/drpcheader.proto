@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package drpc; //相当于namespace名称
+
+message RpcHeader
+{
+    bytes service_name = 1;
+    bytes method_name = 2;
+    uint32 args_size = 3;
+}
+
+// protoc drpcheader.proto --cpp_out=./
