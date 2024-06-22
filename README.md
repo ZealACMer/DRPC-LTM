@@ -19,8 +19,9 @@ C++分布式网络通信框架
   3. 针对访问量比较大的模块，可以根据情况以集群部署的方式，对其进行扩充，以期为用户提供更好的使用体验。
 
 ## DRPC-LTM分布式网络通信框架（流程简介）
+<div align="center">
 <img width="826" alt="DRPC-LTM" src="https://github.com/ZealACMer/DRPC-LTM/assets/16794553/a7370b99-00dc-4808-a380-f88a86a62165">
-
+</div>
 上图中绿色方框内的内容，即为本分布式网络通信框架实现的核心功能。
                         
 ## 环境配置
@@ -50,8 +51,9 @@ Protobuf是Google开发的一种用于跨平台信息交互的数据格式，支
 本项目的主要文件夹简介：bin（用于存放可执行文件及配置文件），build（用于存放执行编译和构建时生成的中间文件），conf（存放配置文件），example（存放本框架的使用示例文件），lib（存放本项目生成的静态库文件及将框架集成在其他项目中时需要的头文件），src（存放框架的源文件）。
 
 example中的子文件夹provider提供了远程服务发布方的编程示例，另一个子文件夹consumer提供了远程服务调用方的编程示例。通过autobuild.sh脚本构建项目完成后，在bin目录里面，会有可执行文件provider和consumer，如下图所示：
-![DRPC-LTM_2](https://github.com/ZealACMer/DRPC-LTM/assets/16794553/137707e7-819a-45f9-898f-515336dc69f2)
-
+<div align="center">
+<img width="826" alt="DRPC-LTM" src="https://github.com/ZealACMer/DRPC-LTM/assets/16794553/137707e7-819a-45f9-898f-515336dc69f2">
+</div>
 在服务器上启动zookeeper之后，在bin目录下，执行命令./provider -i test.conf先行启动服务提供方的服务，随后执行命令./consumer -i test.conf，如果服务申请端返回"rpc GetFriendList response success!"，则说明运行成功。
 
 ## 如果在自己的项目中使用DRPC-LTM分布式网络通信框架
