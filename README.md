@@ -1,5 +1,5 @@
 # DRPC-LTM (Distributed Remote procedure call Based on Lightweighted Tcp Muduo)
-C++分布式网络通信框架
+C++分布式网络通信框架  「Aliyun CentOS 7.9 64位」
 
 ## 项目背景
 随着软件规模的扩大，传统的编程模式从开始的“单机服务器”，发展到“集群服务器”，进而演变成“分布式服务”的模式，催生了不同机器上运行的服务，或者同一台机器上不同进程中运行的服务(主要指的是docker虚拟化环境)之间进行远程过程调用(rpc, remote procedure call)的需求，该分布式网络通信框架项目就是针对此场景产生的。
